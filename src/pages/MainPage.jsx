@@ -7,6 +7,7 @@ export default function MainPage(){
     <div>
       <Header/>
       <h2>THIS IS THE MAIN PAGE</h2>
+      <Footer/>
     </div>
   )
 }
