@@ -1,0 +1,32 @@
+.about_section_1{
+    display:flex;
+    width:100%;
+    background-color: #E8C6C6;
+    justify-content:space-evenly;
+   
+}
+
+.Title_1_ab{
+    font-size:35px;
+    font-weight:bold;
+    background-color:#E8C6C6;
+    color:#9B738F;
+    text-align:center;
+    padding-top:5%;
+}
+
+@media (max-width:700px){
+    .about_section_1{
+        flex-wrap:wrap;
+    }
+}
+
+
+@media (max-width:400px){
+    .about_section_1{
+        flex-wrap:wrap;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+}

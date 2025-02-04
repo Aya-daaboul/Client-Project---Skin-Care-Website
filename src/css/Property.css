@@ -1,0 +1,39 @@
+.property_section{
+    display:flex;
+    flex-direction:column;
+    width:240px;
+    height:fit-content;
+    background-color:#E8C6C6;
+    align-items:center;
+    padding:20px;
+    
+}
+.circle_property{
+    margin-top:20px;
+    border-radius:50%;
+    align-items:center;
+    justify-content:center;
+    background-color:hsla(359, 43%, 82%,0.99);
+    padding:10px;
+    width:120px;
+    height:120px;
+    display:flex;
+    flex-direction:column;
+
+}
+.property_section h3{
+    margin-top:20px;
+    color:#9B738F;
+    font-weight:bold;
+    font-size:35px;
+    margin-bottom:10px;
+
+}
+.property_section p{
+    color:#FAF8F6;
+    font-weight:bold;
+    font-size:20px;
+    line-height:3cap;
+
+}
+
