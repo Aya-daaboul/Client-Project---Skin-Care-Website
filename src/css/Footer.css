@@ -32,12 +32,20 @@
 .lumiere_magnified{
     font-size:50px;
 }
+.Footer_links_nav{
+    padding:10px;
+    width:max-content;
+
+}
 .Footer_links_nav a{
  text-decoration: none;
  color:#9B738F;
  font-weight:bold;
  font-size:20px;
 
+}
+.Footer_links_nav ul{
+    width:100%;
 }
 .Footer_links_nav ul li{
     background-image: url('../assets/star.png'); 

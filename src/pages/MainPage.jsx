@@ -6,7 +6,7 @@ export default function MainPage(){
   return (
    <>
       <Header/>
-      <h2>THIS IS THE MAIN PAGE</h2>
+      
       <Footer/>
    
    </>
