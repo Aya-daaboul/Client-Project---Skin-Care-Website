@@ -5,6 +5,7 @@ import '../css/About.css'
 import Icon1 from "../assets/icon1.svg";
 import Icon2 from "../assets/icon2.svg";
 import Icon3 from "../assets/icon3.svg";
+import AboutPicSection from '../components/AboutPicSection';
 
 const icons = [Icon1, Icon2, Icon3];
 
@@ -21,6 +22,8 @@ export default function About() {
     <Property img={icons[2]} title="Today & Beyond" description="We keep innovating with science-backed, nature-powered formulations for radiant, healthy skin." />
 
     </div>
+
+    <AboutPicSection></AboutPicSection>
     
     </>
 
