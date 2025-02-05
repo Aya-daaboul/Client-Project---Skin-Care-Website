@@ -1,13 +1,19 @@
 import React from 'react'
-import banner from '../assets/banner.jpg'
+import banner from '../assets/banner1.jpg'
 import '../css/Banner.css'
-console.log(banner)
+
 export default function Banner() {
   return (
+    <>
     <div className='banner_container'>
-        <img src={banner}></img>
+        <img className="my_cover" src={banner} alt="Banner" />
       
     </div>
+
+    <h2 className='hero_title'>Glow <br></br>and <br></br>Shine</h2>
+    </>
+    
+
   )
 }
 
