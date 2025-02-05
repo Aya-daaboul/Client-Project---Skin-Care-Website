@@ -72,24 +72,29 @@
 
 }
 .Footer_button_cta{
-    margin-left:15%;
+    margin-left:30px;
 }
 .cta_services{
     padding:10px 10px 12px 12px;
-    width:fit=content;
+    width:fit-content;
     border:3px solid #9B738F;
     background-color: transparent;
     color:#9B738F;
     border-radius:12px;
     font-size:20px;
 }
-@media (max-width:600px){
+@media (max-width:800px){
     .Footer_container{
         flex-wrap:wrap;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+
 
     }
+
 }
-@media (max-width:400px){
+@media (max-width:600px){
     .Footer_container{
         flex-wrap:wrap;
         flex-direction:column;
