@@ -52,6 +52,40 @@
     border-radius:11px;
     border:none;
 }
+
+@media (max-width:1270px){
+    .about_pic_section_container{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+        border-radius:20px;
+
+    }
+    .text_and_details_container{
+        min-width:400px;
+    }
+    .text_and_details_container p{
+        font-size:30px;
+        margin-bottom:10px;
+    }
+    .about_pic_section_container img{
+        margin-top:30px;
+        width:450px;
+        height:420px;
+    }
+    .subtitle_about{
+        align-self:center;
+    }
+    .cta_about_wide{
+        align-self: center;
+        font-size:25px;
+
+    }
+
+}
+
+
 @media (max-width:1000px){
     .about_pic_section_container{
         flex-direction:column;
