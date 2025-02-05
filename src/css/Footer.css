@@ -10,9 +10,9 @@
     align-items:flex-start;
     background: linear-gradient(to right, 
     #FAF8F6 0%, 
-    #FAF8F6 30%,  /* Keep white dominant for the first 40% */
-    #E8C6C6 50%,  /* Start blending pink */
-    #df59597c 99%   /* Introduce red very lightly */
+    #FAF8F6 30%,  
+    #E8C6C6 50%,  
+    #df59597c 99%   
 );
 }
 .Footer_logo_socials{
@@ -89,17 +89,15 @@
         flex-direction:column;
         align-items:center;
         justify-content:center;
-
-
+        
+        background: linear-gradient(to bottom, 
+        #FAF8F6 0%, 
+        #FAF8F6 30%,  
+        #E8C6C6 50%,  
+        #df59597c 99%   
+    );
+    gap:30px;
+        
     }
 
-}
-@media (max-width:600px){
-    .Footer_container{
-        flex-wrap:wrap;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-
-    }
 }
