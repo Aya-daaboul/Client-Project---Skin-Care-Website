@@ -6,6 +6,9 @@
     align-items:flex-start;
     justify-content:flex-start;
     border-radius:2%;
+    height:fit-content;
+    padding-bottom:0px;
+    flex-wrap:nowrap;
 }
 .about_pic_section_container img{
     border-radius:2%;
@@ -21,22 +24,25 @@
     justify-content:flex-start;
     align-items:flex-start;
     flex-direction:column;
+    max-width:660px;
+    flex-shrink:1;
+    min-width:550px;
 }
 .subtitle_about{
-    margin-top:8%;
+    margin-top:30px;
     font-weight:bold;
     color:#9B738F;
     font-size:50px;
 }
 .text_and_details_container p{
-    margin-top:3%;
+    margin-top:5%;
     color:#FAF8F6;
-    font-size:35px;
+    font-size:33px;
 
 }
 .cta_about_wide{
-    margin-top:3%;
-    font-size:35px;
+    margin-top:5%;
+    font-size:33px;
     color:#FAF8F6;
     background-color: #9B738F;
     padding-top:7px;
@@ -46,3 +52,77 @@
     border-radius:11px;
     border:none;
 }
+@media (max-width:1000px){
+    .about_pic_section_container{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+        border-radius:20px;
+
+    }
+    .text_and_details_container{
+        min-width:400px;
+    }
+    .text_and_details_container p{
+        font-size:30px;
+        margin-bottom:10px;
+    }
+    .about_pic_section_container img{
+        margin-top:30px;
+        width:350px;
+        height:320px;
+        border-radius:50%;
+    }
+    .subtitle_about{
+        align-self:center;
+    }
+    .cta_about_wide{
+        align-self: center;
+        font-size:25px;
+
+    }
+
+}
+
+@media (max-width:600px){
+    .about_pic_section_container{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+        border-radius:20px;
+
+    }
+    .text_and_details_container{
+        min-width:200px;
+    }
+    .text_and_details_container p{
+        font-size:25px;
+        margin-bottom:10px;
+    }
+    .about_pic_section_container img{
+        margin-top:30px;
+        width:240px;
+        height:230px;
+        border-radius:50%;
+    }
+    .subtitle_about{
+        align-self:center;
+    }
+    .cta_about_wide{
+        align-self: center;
+        font-size:25px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+

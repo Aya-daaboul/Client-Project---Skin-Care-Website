@@ -7,7 +7,7 @@ export default function AboutPicSection() {
     <div className="about_pic_section_container">
 
         <div className='img_container'>
-          <img src={wom} width='540px' height='500px'></img>
+          <img src={wom} width='600px' height='540px'></img>
         </div>
 
         <div className="text_and_details_container">
