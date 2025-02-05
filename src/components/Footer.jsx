@@ -54,8 +54,10 @@ function Footer(){
               
       </div>
       <div className='Footer_button_cta'>
-        <Link>
-        <button className='cta_services'></button>
+        <Link to='/services'>
+        <button className='cta_services'>
+          Explore Our Services
+        </button>
         </Link>
       </div>
       

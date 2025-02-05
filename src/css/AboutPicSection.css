@@ -9,6 +9,7 @@
     height:fit-content;
     padding-bottom:0px;
     flex-wrap:nowrap;
+    margin-bottom:10%;
 }
 .about_pic_section_container img{
     border-radius:2%;
@@ -71,8 +72,8 @@
     }
     .about_pic_section_container img{
         margin-top:30px;
-        width:450px;
-        height:420px;
+        width:550px;
+        height:520px;
     }
     .subtitle_about{
         align-self:center;

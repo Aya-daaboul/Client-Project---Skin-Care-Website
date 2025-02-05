@@ -5,8 +5,10 @@ import '../css/About.css'
 import Icon1 from "../assets/icon1.svg";
 import Icon2 from "../assets/icon2.svg";
 import Icon3 from "../assets/icon3.svg";
+import wom from '../assets/womenpic.png'  ;
+import wom1 from '../assets/wom2.png'
 import AboutPicSection from '../components/AboutPicSection';
-
+import Footer from '../components/Footer'
 const icons = [Icon1, Icon2, Icon3];
 
 export default function About() {
@@ -23,8 +25,10 @@ export default function About() {
 
     </div>
 
-    <AboutPicSection></AboutPicSection>
+    <AboutPicSection img={wom} title="Our Mission" description="At Lemiere, our mission is to provide luxurious, natural skincare that nourishes the skin while promoting sustainability and ethical sourcing. We believe in high-performance, nature-powered formulations that enhance your natural beauty and deliver real results—all while being kind to your skin and the planet."></AboutPicSection>
+    <AboutPicSection img={wom1} title="Our Vision" description="We envision a world where skincare is more than beauty— it is self-care, well-being, and sustainability all at once. Lemiere strives to be a leader in premium, eco-conscious skincare, empowering individuals with science-backed, nature-inspired products that help them look and feel their best."></AboutPicSection>
     
+    <Footer/>
     </>
 
       
