@@ -3,7 +3,7 @@
     align-items:flex-start;
     justify-content:flex-start;
     margin-top:10%;
-    margin-bottom:10%;
+    margin-bottom:15%;
     padding-right:20px;
 }
 .child_left_text{
@@ -67,5 +67,16 @@
         flex-wrap:wrap;
         flex-direction:column;
         align-items:center;
+    }
+    .child_right_pic img{
+        width:240px;
+        height:330px;
+    }
+    .child_right_pic{
+        width:240px;
+        height:330px;
+        margin-top:30px;
+        margin-left:20%;
+        
     }
 }
