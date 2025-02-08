@@ -29,6 +29,17 @@
     margin-left:30%;
     
 }
+.custom_hr{
+    width:100%;
+    border-top:2px solid #AC3A4E;
+    position: relative;
+    margin-bottom:10%;
+}
+.svg_star{
+    position: absolute;
+    top: -24.3px;
+    left:10%;
+}
 @media (max-width:1000px){
     .section_pic_container{
         flex-wrap:wrap;
@@ -78,5 +89,12 @@
         margin-top:30px;
         margin-left:20%;
         
+    }
+    .svg_star{
+        width:30px;
+        height:33px;    
+        position: absolute;
+        top: -18px;
+        left:10%;
     }
 }
