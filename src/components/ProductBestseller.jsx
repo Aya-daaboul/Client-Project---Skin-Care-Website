@@ -26,8 +26,8 @@ export default function ProductBestseller(){
     </div>
 
     <div className='button_product_holder'>
-        <Link to='/services'></Link>
-        <button> Products </button>
+        <Link to='/services'><button> Products </button></Link>
+        
     </div>
     </>
   )
