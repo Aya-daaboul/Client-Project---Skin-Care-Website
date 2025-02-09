@@ -1,0 +1,83 @@
+.why_question_title{
+    font-size:3em;
+    text-align:center;
+    color:#E8C6C6;
+}
+
+.why_choose_us_section{
+    display:flex;
+    flex-wrap:wrap;
+    row-gap:30px;   
+    align-items:center;
+    justify-content: center;
+    margin-top:30px;
+    margin-bottom:10%;
+}
+.benefit_holder{
+    display:flex;
+    background-color:#E8C6C6;
+    padding:20px;
+    width:80%;
+    border-radius:20px;
+
+}
+.round_pfp_svg{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: #c87a805a;
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    margin-right:20px;
+    aspect-ratio: 1 / 1;
+}
+.round_pfp_svg svg {
+    width: 50%;
+    height: 55%;
+    object-fit: contain;
+}
+.why_answer p{
+    font-size:25px;
+    color:#FAF8F6;
+    font-weight:bold;
+    line-height: 1.5;
+}
+.why_answer h4{
+    font-size:35px;
+    font-weight:bolder;
+    color:#9B738F;
+    margin-bottom:20px;
+}
+@media (max-width:890px){
+    .round_pfp_svg{
+        width:100px;
+        height:100px;
+    }
+    .round_pfp_svg svg{
+        width:90px;
+        height:70px;
+    }
+}
+
+@media (max-width:600px){
+    .why_question_title{
+        font-size:1.2em;
+    }
+    .why_answer h4{
+        font-size:28px;
+    }
+    .why_answer p{
+        font-size:20px;
+    }
+    .round_pfp_svg svg{
+        width:80px;
+        height:40px;
+    }
+    .round_pfp_svg{
+        width:50px;
+        height:50px;
+    }
+
+
+}
