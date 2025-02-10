@@ -1,0 +1,106 @@
+.stats_container{
+    display:flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom:10%;
+    margin-top:40px;
+    padding:20px;   
+    background-color:#E8C6C6 ;
+    flex-shrink: 0;
+    padding-top:30px;
+    padding-bottom:40px;
+}
+.nbs_and_stats{
+    width:300px;
+    min-width:100px;
+    margin-left:10px;
+}
+.nbs_and_stats p{
+    font-size:40px;
+    color:#9B738F;
+}
+.nbs_and_stats span{
+    font-size:60px;
+    font-weight:bold;
+}
+.care_science_section{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-wrap:nowrap;
+    margin-bottom:10%;
+}
+.care_science_section img{
+    width:400px;
+    margin-right:20px;
+}
+.headline{
+    font-size:40px;
+    color:#9B738F;
+    margin-bottom:30px;
+}
+.desc{
+    color:#E8C6C6;
+    font-size:28px;
+    line-height: 1.2;
+    margin-bottom:5%;
+}
+.why_science_right_section{
+    display: flex;
+    flex-direction:column;
+    margin-left:10%;
+}
+.contact_cta{
+    margin-top:20px;
+    padding:20px;   
+    border-radius: 10px;
+    color:#9B738F;
+    background-color: transparent;
+    border:2px solid #9B738F;
+}
+@media (max-width:800px){
+    .nbs_and_stats p{
+        font-size:30px;
+    }
+    .nbs_and_stats span{
+        font-size:45px;
+    }
+    .care_science_section img{
+        width:380px;
+    }
+    .headline{
+        margin-top:20px;
+        font-size:30px;
+    }
+    .desc{
+        font-size:20px;
+    }
+    .care_science_section{
+        flex-wrap: wrap;
+    }
+    .why_science_right_section{
+        align-items: center;
+        width:200px;
+        justify-content: center;
+    }
+}
+@media (max-width:600px){
+    .nbs_and_stats p{
+        font-size:20px;
+    }
+    .nbs_and_stats span{
+        font-size:35px;
+    }
+    .care_science_section img{
+        width:240px;
+    }
+    .headline{
+        font-size:25px;
+    }
+    .stats_container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+}
