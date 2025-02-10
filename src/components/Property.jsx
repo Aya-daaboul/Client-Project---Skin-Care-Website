@@ -3,7 +3,7 @@ import '../css/Property.css'
 
 export default function Property(props){
 
-    const { img: Icon, title, description } = props;
+    const { img: Icon, title, description} = props;
 
 
   return (
