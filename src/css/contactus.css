@@ -1,0 +1,89 @@
+.container {
+    color: #9B738F;
+    padding: 20px;
+    border-radius: 6px;
+    background: #E8C6C6;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.getTouch {
+    flex: 1;
+    padding: 30px;
+    margin: 20px;
+    border-right: 1px solid #AC3A4E;
+}
+
+.rightDiv {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.name {
+    display: flex;
+    gap: 30px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.group label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.group input, .group textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #9B738F;
+    width: 100%;
+    font-size: 16px;
+  
+}
+
+.group textarea {
+    height: 150px;
+    resize: vertical;
+    width: 40vw;
+   
+}
+
+.sub {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sub input {
+    margin-right: 5px;
+    width: auto;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    background-color: #9B738F;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8a637e;
+}
+#email{
+    width: 15vw;
+}

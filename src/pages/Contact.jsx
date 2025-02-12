@@ -1,97 +1,119 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import socialMedia from "../assets/social media.png";
+import "../css/contactus.css";
 
 export default function Contact() {
-  const container = {
-    color: "#9B738F",
-    padding: "10px",
-    borderRadius: "6px",
-    background: "#E8C6C6",
-      margin: "20px",
-      display: "flex",
-    flexDirection:"row"
+  const [details, setDetails] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    mssg: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setDetails((prev) => ({ ...prev, [name]: value }));
   };
-  const title = {
-    margin: "20px",
-    padding: "30px",
-  };
-  const getTouchStyle = {
-    flex: 1,
-    padding: "10px",
-    margin: "10px",
-    borderRight: '1px solid #AC3A4E'
-  };
-  const rightDivStyle = {
-    flex: 1,
-    padding: "10px",
-    margin: "10px",
-    alignItems: "center",
-  };
-  const formStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-  };
-  const inputStyle = {
-    margin: "10px 0",
-    padding: "10px",
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(details);
   };
 
   return (
     <div>
       <Header />
-      <div className="container" style={container}>
-        <div style={getTouchStyle} className="getTouch">
-          <h1 style={title}>GET IN TOUCH!</h1>
-          <h2 style={title}>+1 (800) 123-4567</h2>
-          <h2 style={title}>Support@lumiere.com</h2>
-          <h2 style={title}>
+      <div className="container">
+        <div className="getTouch">
+          <h1> GET IN TOUCH!</h1> <br />
+          <h1>+1 (800) 123-4567</h1> <br />
+          <h1>Support@lumiere.com</h1> <br />
+          <h1>
             Lumiere Headquarters
             <br />
             Coastal City, CA 90210
             <br />
             USA
-          </h2>
+          </h1> <br />
           <div>
             <img src={socialMedia} alt="social media icons" />
           </div>
         </div>
-        <div style={rightDivStyle}>
-          <form style={formStyle}>
-            <div style={inputStyle}>
-              <label>First Name</label>
-              <input type="text" name="firstName" />
+
+        <div className="rightDiv">
+          <form className="formStyle" onSubmit={handleSubmit}>
+            <div className="name">
+              <div className="group">
+                <label htmlFor="firstName">First Name</label>
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  value={details.firstName}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="group">
+                <label htmlFor="lastName">Last Name</label>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  value={details.lastName}
+                  onChange={handleChange}
+                />
+              </div>
             </div>
-            <div style={inputStyle}>
-              <label>Last Name</label>
-              <input type="text" name="lastName" />
+
+            <div className="group">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={details.email}
+                onChange={handleChange}
+              />
             </div>
-            <div style={inputStyle}>
-              <label>Email</label>
-              <input type="email" name="email" />
-            </div>
-            <div style={inputStyle}>
+
+            <div className="group">
               <label>Subject</label>
-              <select name="subject">
-                <option value="general">General Inquiry</option>
-                <option value="feedback">Feedback</option>
-              </select>
+              <div className="sub">
+                <input
+                  type="radio"
+                  id="general"
+                  name="subject"
+                  value="general"
+                  onChange={handleChange}
+                />
+                <label htmlFor="general">General Inquiry</label>
+
+                <input
+                  type="radio"
+                  id="feedback"
+                  name="subject"
+                  value="feedback"
+                  onChange={handleChange}
+                />
+                <label htmlFor="feedback">Feedback</label>
+              </div>
             </div>
-            <div style={inputStyle}>
-              <label>Message</label>
-              <textarea name="message"></textarea>
+
+            <div className="group">
+              <label htmlFor="mssg">Message</label>
+              <textarea
+                id="mssg"
+                name="mssg"
+                value={details.mssg}
+                onChange={handleChange}
+                placeholder="Type your message here..."
+              ></textarea>
             </div>
-            <button
-              type="submit"
-              style={{
-                width: "50px",
-                height: "30px",
-                  padding: "5px",
-              }}
-            >
-              submit
-            </button>
+
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>
