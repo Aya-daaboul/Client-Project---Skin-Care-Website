@@ -37,7 +37,8 @@ export default function Contact() {
             Coastal City, CA 90210
             <br />
             USA
-          </h1> <br />
+          </h1>{" "}
+          <br />
           <div>
             <img src={socialMedia} alt="social media icons" />
           </div>
