@@ -1,0 +1,181 @@
+/* Container for all service cards */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the grid */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Each service card */
+.service-card {
+  display: flex;
+  width: 48%; /* Ensures 2 cards per row */
+  background: #E8C6C6; /* Light pink background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+}
+
+/* Image styling */
+.service-card-img {
+  width: 40%;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Right-side content */
+.service-card-content {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Title styling */
+.service-card-title {
+  color: #9B738F; /* Dark purple for elegance */
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Description styling */
+.service-card-desc {
+  color: #ffffff;
+  font-size: 16px;
+  opacity: 0.8; /* Light faded look */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%; /* Full width for smaller screens */
+    flex-direction: column; /* Stack image and text */
+  }
+
+  .service-card-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .service-card-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Overall container */
+.products-container {
+    margin-top: 5vw;
+  background-color: #E8C6C6; /* Light pink */
+  padding: 40px;
+  text-align: center;
+}
+
+/* Title styling */
+.products-title {
+  font-size: 28px;
+  color: #9B738F; /* Elegant purple */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.products-title .highlight {
+  color: #9B738F; /* Slightly darker purple */
+}
+
+/* Product Grid */
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Individual Product Card */
+.product-card {
+  width: 28%; /* 3 per row */
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* Image Styling */
+.product-img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: auto;
+}
+
+/* Product Name */
+.product-name {
+  margin-top: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .product-card {
+    width: 45%; /* 2 per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    width: 100%; /* 1 per row */
+  }
+}
+.back{
+    background: #E8C6C6;
+    text-align: center;
+}
+.btn {
+    margin: 10px;
+}
+
+.lastsec{
+    padding: 20px;
+    margin: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    background: #E8C6C6;
+    text-align: center;
+}
+.lastsec h2 {
+    color: #9B738F;
+text-align: center;
+font-weight: bolder;
+}
+ .lastsec p{
+    color: #ffffff;
+    text-align: center;
+    font-size: large;
+    font-weight: bold ;
+ }
+ .bookcons{
+    border: solid #9B738F;
+    color: #9B738F ;
+    background: transparent;
+ }
+ .bookcons:hover{
+    color: #E8C6C6;
+    
+ }
