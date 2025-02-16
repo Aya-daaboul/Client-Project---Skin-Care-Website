@@ -73,23 +73,23 @@ const Services = () => {
       <div className="services-container">
         <ServiceCard
           imgSrc={img1}
-          title="Service One"
-          descrip="This is the first service."
+          title="Facial Treatment"
+          descrip="Customized treatments to refresh and rejuvenate your skin."
         />
         <ServiceCard
           imgSrc={img2}
-          title="Service Two"
-          descrip="This is the second service."
+          title="Micro needling"
+          descrip="Stimulates collagen production for smoother, youthful skin."
         />
         <ServiceCard
           imgSrc={img3}
-          title="Service Three"
-          descrip="This is the third service."
+          title="Skin Analysis"
+          descrip="In-depth analysis to understand your unique skin needs."
         />
         <ServiceCard
           imgSrc={img4}
-          title="Service Four"
-          descrip="This is another service."
+          title="Facial Spa "
+          descrip="A luxurious, relaxing experience for glowing, healthy skin."
         />
       </div>
       {/* Products Section */}
