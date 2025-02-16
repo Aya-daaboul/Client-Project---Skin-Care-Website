@@ -1,4 +1,4 @@
-.container {
+/*.container {
     color: #9B738F;
     padding: 20px;
     border-radius: 6px;
@@ -86,4 +86,119 @@ button:hover {
 }
 #email{
     width: 15vw;
+}*/
+.container {
+    color: #9B738F;
+    padding: 20px;
+    border-radius: 6px;
+    background: #E8C6C6;
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Changed for mobile responsiveness */
+}
+
+.getTouch {
+    flex: 1;
+    padding: 30px;
+    margin: 20px;
+    border-bottom: 1px solid #AC3A4E;
+}
+
+.rightDiv {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+}
+
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column; /* Changed for mobile responsiveness */
+    gap: 10px; /* Adjusted gap for mobile */
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.group label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.group input, .group textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #9B738F;
+    width: 100%;
+    font-size: 16px;
+}
+
+.group textarea {
+    height: 150px;
+    resize: vertical;
+    width: 100%; /* Adjusted width for mobile */
+}
+
+.sub {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Adjusted alignment for mobile */
+}
+
+.sub input {
+    margin-right: 5px;
+    width: auto;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    background-color: #9B738F;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8a637e;
+}
+
+#email {
+    width: 100%; /* Adjusted width for mobile */
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row; /* Changed for PC responsiveness */
+    }
+
+    .name {
+        flex-direction: row; /* Changed for PC responsiveness */
+        gap: 30px; /* Adjusted gap for PC */
+    }
+
+    .sub {
+        flex-direction: row; /* Ensures sub elements are side by side on larger screens */
+        align-items: center; /* Adjusted alignment for PC */
+    }
+
+    .group textarea, #email {
+        width: 40vw; /* Adjusted width for PC */
+    }
+    .getTouch {
+    border:none;
+    border-right: 1px solid #AC3A4E;
+}
+
 }
